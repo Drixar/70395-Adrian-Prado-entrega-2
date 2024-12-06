@@ -32,9 +32,10 @@ export class ChatManager {
 
     fs.writeFile(this.path, JSON.stringify(messages), (err) => {
       if (err) console.log(err);
-      else {
-        console.log("File written successfully\n");
-      }});
-      return messages;
+      //else {
+      //  console.log("File written successfully\n");
+      // }
+    });
+    return messages;
   }
 }
